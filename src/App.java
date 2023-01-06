@@ -11,5 +11,6 @@ public class App {//High level public class must match .java file name
       System.out.println("New Commit");
       System.out.println("Desktop Commit");   
       System.out.println("ITS FINALLY WORKING MY COMPUTERS AND GITHUB ARE SYNCED");
+      System.out.println("one last time");
     }
   }
