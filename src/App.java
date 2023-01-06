@@ -7,6 +7,7 @@ public class App {//High level public class must match .java file name
         System.out.println("Good day.");//if true prints Good day.
       } else {
         System.out.println("Good evening.");//else executes when false and prints Good evening instead.
-      }     
+      }
+      System.out.println("New Commit");    
     }
   }
