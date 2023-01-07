@@ -46,11 +46,27 @@ public class CleanMethods { // Main Class name must match file name
             System.out.println();//new cursor line after every completion of inner loop
           }
     }
+
+    public static int simpleMath(int x) {
+        return x * 2;
+    }
+
+    static int plusMethod(int x, int y) { //Method Overloading to be able to add together different data types.
+        return x + y;
+      }     
+    static double plusMethod(double x, double y) {//Can use same method name if declared with different data types.
+        return x + y;
+      }
     public static void main(String[] args) {
         helloWorld();
         nameMethod("Greg", " Broseker"); //pass values to parameters to be used in nameMethod above
         timeMethod();
         nalaSimba();
-        nested2DArrayLoop();
+        nested2DArrayLoop(); //Method that creates a number matrix and iterates through it with a loop within a loop (nested loop)
+        int z = simpleMath(28);// create z variable to store value of simpleMath method
+        System.out.println("Twice your income is: $" + z);// print z to screen which will carry simpleMath method result as value
+        int num1 = plusMethod(24, 6);
+        double num2 = plusMethod(6.7, 14.9);
+        System.out.println(num1 * num2);//can do math on different data types and log to console but java will not let you create a new variable that has a value resulting from arithmetic between num1 and num2
     }
 }
