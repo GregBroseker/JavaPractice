@@ -57,6 +57,22 @@ public class CleanMethods { // Main Class name must match file name
     static double plusMethod(double x, double y) {//Can use same method name if declared with different data types.
         return x + y;
       }
+
+    public static int sum(int k) { // Method that adds all numbers within a range through the 'k' variables value
+        if (k> 0) {
+            return k + sum(k - 1);
+        } else {
+            return 0;
+        }
+    }
+    public static int sum2(int start, int end) { //Method that adds together all numbers between a range
+        if (end > start) {
+            return end + sum2(start, end - 1);
+        } else {
+            return end;
+        }
+    }
+
     public static void main(String[] args) {
         helloWorld();
         nameMethod("Greg", " Broseker"); //pass values to parameters to be used in nameMethod above
@@ -68,5 +84,9 @@ public class CleanMethods { // Main Class name must match file name
         int num1 = plusMethod(24, 6);
         double num2 = plusMethod(6.7, 14.9);
         System.out.println(num1 * num2);//can do math on different data types and log to console but java will not let you create a new variable that has a value resulting from arithmetic between num1 and num2
+        int result = sum(10); //assign which number range you want to add together in sum() method
+        System.out.println(result);// print sum method result to window
+        int result2 = sum2(1, 5);
+        System.out.println(result2); 
     }
 }
