@@ -73,6 +73,15 @@ public class CleanMethods { // Main Class name must match file name
         }
     }
 
+    public void fullThrottle() {
+      System.out.println("The car is going as fast as it can!");
+    }
+  
+    // Create a speed() method and add a parameter
+    public void speed(int maxSpeed) {
+      System.out.println("Max speed is: " + maxSpeed);
+    } 
+
     public static void main(String[] args) {
         helloWorld();
         nameMethod("Greg", " Broseker"); //pass values to parameters to be used in nameMethod above
@@ -88,5 +97,8 @@ public class CleanMethods { // Main Class name must match file name
         System.out.println(result);// print sum method result to window
         int result2 = sum2(1, 5);
         System.out.println(result2); 
+        CleanMethods myCar = new CleanMethods(); 
+        myCar.fullThrottle();      // Call the fullThrottle() method
+        myCar.speed(200);
     }
 }
