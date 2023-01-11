@@ -19,6 +19,7 @@
             "projectName": "JavaPractice_89b4ec9a"
         },
         {
+            
             "type": "java",
             "name": "Launch Classes",
             "request": "launch",
@@ -38,12 +39,19 @@
             "request": "launch",
             "mainClass": "Main",
             "projectName": "JavaPractice_89b4ec9a"
+        },
+        {
+            "type": "java",
+            "name": "Launch Animal",
+            "request": "launch",
+            "mainClass": "Animal",
+            "projectName": "JavaPractice_89b4ec9a"
         }
     ],
     "compounds": [
         {
             "name": "Compound",
-            "configurations": ["Launch Person", "Launch Main"]
+            "configurations": ["Launch Person", "Launch Main", "Launch Animal"]
         }
     ]
 }
